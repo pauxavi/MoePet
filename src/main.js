@@ -111,6 +111,7 @@ document.addEventListener('contextmenu', function(e) {
 });
 
 listen('contextmenu:action', function(event) {
+  console.log('Received contextmenu:action:', event.payload);
   var action = event.payload && event.payload.action;
   if (action === 'settings') {
     configLoadedPromise.finally(function() {

@@ -6,9 +6,16 @@ var appWindow = getCurrentWindow();
 
 function action(name) {
   // Hide after emitTo completes so the event reaches main before the window closes
-  emitTo('main', 'contextmenu:action', { action: name }).then(function() {
-    appWindow.hide().catch(function() {});
-  });
+  console.log('Action:', name);
+  emitTo('main', 'contextmenu:action', { action: name })
+    .then(function() {
+      console.log('Event sent, hiding window');
+      appWindow.hide().catch(function(e) { console.error('Hide error:', e); });
+    })
+    .catch(function(e) {
+      console.error('Emit error:', e);
+      appWindow.hide().catch(function() {});
+    });
 }
 
 // Use mousedown so action fires before blur hides the window
