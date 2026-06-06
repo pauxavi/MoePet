@@ -1,0 +1,96 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": [
+    "main",
+    "bubble",
+    "settings",
+    "context-menu",
+    "chat"
+  ],
+  "permissions": [
+    "core:default",
+    "core:window:allow-create",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-close",
+    "core:window:allow-start-dragging",
+    "core:window:allow-set-position",
+    "core:window:allow-set-size",
+    "core:window:allow-inner-size",
+    "core:webview:allow-create-webview-window",
+    "shell:allow-open",
+    "shell:allow-stdin-write",
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "claude",
+          "cmd": "claude",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "gemini",
+          "cmd": "gemini",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "bash",
+          "cmd": "bash",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "screencapture",
+          "cmd": "screencapture",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "rm",
+          "cmd": "rm",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "python3",
+          "cmd": "python3",
+          "args": true,
+          "sidecar": false
+        }
+      ]
+    },
+    {
+      "identifier": "shell:allow-spawn",
+      "allow": [
+        {
+          "name": "claude",
+          "cmd": "claude",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "gemini",
+          "cmd": "gemini",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "bash",
+          "cmd": "bash",
+          "args": true,
+          "sidecar": false
+        },
+        {
+          "name": "screencapture",
+          "cmd": "screencapture",
+          "args": true,
+          "sidecar": false
+        }
+      ]
+    }
+  ]
+}

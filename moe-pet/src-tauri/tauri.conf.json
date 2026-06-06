@@ -1,0 +1,38 @@
+{
+  "productName": "MoePet",
+  "version": "0.1.0",
+  "identifier": "com.moepet.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "MoePet",
+        "width": 200,
+        "height": 300,
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "focus": false,
+        "dragDropEnabled": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "icon": [],
+    "targets": ["nsis"]
+  },
+  "plugins": {
+    "dialog": {}
+  }
+}

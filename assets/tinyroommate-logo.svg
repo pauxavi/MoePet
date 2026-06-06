@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="72" y1="52" x2="444" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7C7"/>
+      <stop offset="0.48" stop-color="#FFCCB8"/>
+      <stop offset="1" stop-color="#F5A9BF"/>
+    </linearGradient>
+    <linearGradient id="house" x1="132" y1="122" x2="382" y2="382" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#FFF1E8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="128" fill="url(#bg)"/>
+
+  <path d="M116 228L256 112L396 228V340C396 379.765 363.765 412 324 412H188C148.235 412 116 379.765 116 340V228Z" fill="url(#house)"/>
+  <path d="M116 228L256 112L396 228" stroke="#4D3A3F" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M156 208V340C156 357.673 170.327 372 188 372H324C341.673 372 356 357.673 356 340V208" stroke="#4D3A3F" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M225 248L239 227L256 244L273 227L287 248" stroke="#4D3A3F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="286" r="50" fill="#FFF8F1" stroke="#4D3A3F" stroke-width="12"/>
+  <circle cx="238" cy="280" r="4.5" fill="#4D3A3F"/>
+  <circle cx="274" cy="280" r="4.5" fill="#4D3A3F"/>
+  <path d="M240 310C249 318 263 318 272 310" stroke="#4D3A3F" stroke-width="9" stroke-linecap="round"/>
+
+  <path d="M336 150C347.5 140.5 367.5 145.5 372 163C375 174.5 368 185.5 355 194C344.5 185.5 334.5 175 334.5 162.5C334.5 157.5 335.5 153.5 336 150Z" fill="#FFF8F3"/>
+  <path d="M336 150C347.5 140.5 367.5 145.5 372 163C375 174.5 368 185.5 355 194C344.5 185.5 334.5 175 334.5 162.5C334.5 157.5 335.5 153.5 336 150Z" stroke="#4D3A3F" stroke-width="10" stroke-linejoin="round"/>
+</svg>

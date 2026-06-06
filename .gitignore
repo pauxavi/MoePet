@@ -1,0 +1,14 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/Cargo.lock
+public/models
+public/sprites/cat.png
+public/sprites/cat_transparent.png
+package-lock.json
+.pet-data/
+.claude/settings.local.json
+internal-docs/
+.DS_Store
+*.log
+__pycache__/
