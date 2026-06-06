@@ -1,13 +1,13 @@
 // Context menu window — runs inside context-menu.html
 import { getCurrentWindow } from '@tauri-apps/api/window';
-import { emitTo } from '@tauri-apps/api/event';
+import { emit } from '@tauri-apps/api/event';
 
 var appWindow = getCurrentWindow();
 
 function action(name) {
-  // Hide after emitTo completes so the event reaches main before the window closes
+  // Hide after emit completes so the event reaches main before the window closes
   console.log('Action:', name);
-  emitTo('main', 'contextmenu:action', { action: name })
+  emit('contextmenu:action', { action: name })
     .then(function() {
       console.log('Event sent, hiding window');
       appWindow.hide().catch(function(e) { console.error('Hide error:', e); });
